@@ -49,7 +49,7 @@ function Footer() {
 					</span>
 				</div>
 				<div className="right">
-					<img src="" alt="payment" />
+					<img src="/img/payment.png" alt="payment" />
 				</div>
 			</div>
 		</footer>

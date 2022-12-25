@@ -15,7 +15,7 @@ function Header() {
 			<div className="wrapper">
 				<div className="left">
 					<div className="item">
-						<img src="" alt="usa flag" />
+						<img src="/img/en.png" alt="usa flag" />
 						<ArrowDownIcon />
 					</div>
 					<div className="item">
