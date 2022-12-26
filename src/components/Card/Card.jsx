@@ -9,9 +9,9 @@ function Card({ item }) {
 			<div className="card">
 				<div className="image">
 					{item.isNew && <span>New Season</span>}
-					<img src={item.img} alt="image" className="mainImage" />
+					<img src={item.img} alt="clothe" className="mainImage" />
 					{item.img2 && (
-						<img src={item.img2} alt="image" className="secondImg" />
+						<img src={item.img2} alt="clothe" className="secondImg" />
 					)}
 				</div>
 				<h2>{item.title}</h2>
