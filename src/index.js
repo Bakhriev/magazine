@@ -9,5 +9,3 @@ root.render(
 		<App />
 	</StrictMode>
 )
-
-//<Provider store={store}>		</Provider>
