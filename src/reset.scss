@@ -10,6 +10,11 @@
 	box-sizing: border-box;
 }
 
+:focus,
+:active {
+	outline: none;
+}
+
 a,
 a:link,
 a:visited {
