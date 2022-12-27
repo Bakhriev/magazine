@@ -19,7 +19,7 @@ function FeaturedProducts({ type }) {
 				</p>
 			</div>
 			<div className="bottom">
-				{data.map(item => (
+				{data?.map(item => (
 					<Card item={item} key={item.id} />
 				))}
 			</div>
