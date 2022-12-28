@@ -10,7 +10,7 @@ function FeaturedProducts({ type }) {
 	return (
 		<div className="featuredProducts">
 			<div className="top">
-				<h2>{type} products</h2>
+				<h2>{type} Products</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
 					molestias quos praesentium excepturi aliquid deleniti incidunt quidem!

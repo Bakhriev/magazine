@@ -23,8 +23,8 @@ function Slider() {
 				className="container"
 				style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
 			>
-				{data?.map(elem => (
-					<img src={elem} alt="new brand" />
+				{data?.map((elem, index) => (
+					<img src={elem} key={index} alt="new brand" />
 				))}
 			</div>
 			<div className="icons">
