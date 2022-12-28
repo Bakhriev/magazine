@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 import "./Header.scss"
@@ -8,8 +8,11 @@ import SearchIcon from "@material-ui/icons/Search"
 import PersonIcon from "@material-ui/icons/PersonOutlineOutlined"
 import FavoriteIcon from "@material-ui/icons/FavoriteBorderOutlined"
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCartOutlined"
+import Cart from "../Cart/Cart"
 
 function Header() {
+	const [cartOpen, setCartOpen] = useState(false)
+
 	return (
 		<header className="header">
 			<div className="wrapper">
@@ -52,13 +55,14 @@ function Header() {
 						<SearchIcon />
 						<PersonIcon />
 						<FavoriteIcon />
-						<div className="cartIcon">
+						<div className="cartIcon" onClick={() => setCartOpen(!cartOpen)}>
 							<ShoppingCartIcon />
 							<span>0</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			{cartOpen && <Cart />}
 		</header>
 	)
 }
